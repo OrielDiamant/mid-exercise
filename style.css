@@ -53,3 +53,15 @@ footer {
     font-size: 14px;
     text-align: center;
 }
+
+footer > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer > a > .icon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+}

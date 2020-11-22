@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    direction: rtl;
+    font-family: 'Arial (Hebrew)', Arial;
+}
+    
+header {
+    width: 100%;
+    background-color: #909090;
+}
+
+header > .container {
+    width: 900px;
+    height: 105px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+main .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+main {
+    width: 900px;
+    margin: auto;
+}
+
+main .upper {
+    width: 293px;
+    height: 355px;
+    border: solid 1px gray;
+}
+
+main .lower {
+    width: 293px;
+    height: 216px;
+    border: solid 1px gray;
+}
+
+footer {
+    height: 38px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: #909090;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}

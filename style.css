@@ -32,15 +32,34 @@ main {
 }
 
 main .upper {
-    width: 293px;
-    height: 355px;
-    border: solid 1px gray;
+    width: 291px;
+    height: 354px;
 }
 
 main .lower {
-    width: 293px;
+    width: 291px;
     height: 216px;
-    border: solid 1px gray;
+    border: solid 1px rgb(184, 182, 182);
+}
+
+main .round-r-corner {
+    border-radius: 0 0 20px 0;
+}
+
+main .round-l-corner {
+    border-radius: 0 20px 0 0;
+}
+
+#u-right {
+    background-image: url("images/ur.jpg");
+}
+
+#u-mid {
+    background-image: url("images/um.jpg");
+}
+
+#u-left {
+    background-image: url("images/ul.jpg");
 }
 
 footer {

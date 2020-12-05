@@ -7,17 +7,64 @@ body {
     direction: rtl;
     font-family: 'Arial (Hebrew)', Arial;
 }
-    
+
 header {
     width: 100%;
-    background-color: #909090;
+    background: linear-gradient(0deg, rgba(154, 154, 154, 1) 0%, rgba(195, 195, 195, 1) 0%, rgba(150, 149, 149, 1) 16%, rgba(156, 156, 156, 1) 100%);
 }
 
-header > .container {
+header>.container {
     width: 900px;
     height: 105px;
     margin-bottom: 20px;
     margin: auto;
+}
+
+header .row {
+    display: flex;
+    align-items: flex-start;
+}
+
+header .col {}
+
+header .growing-col {
+    flex: 1;
+}
+
+header .column-direction {
+    flex-direction: column;
+}
+
+header .nav-row {}
+
+header .search-row {
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+#logo {
+    margin: 30px 0 0 10px;
+}
+
+#search-bar {
+    width: 126px;
+    border-radius: 0 8px 0 0;
+    border: 0.5px;
+    height: 19px;
+    padding-right: 3px;
+}
+
+#search-button {
+    margin-right: 1px;
+}
+
+#language {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 17px;
+    margin-top: 2px;
 }
 
 main .row {
@@ -29,6 +76,7 @@ main .row {
 main {
     width: 900px;
     margin: auto;
+    margin-top: 30px;
 }
 
 main .upper {
@@ -42,11 +90,11 @@ main .lower {
     border: solid 1px rgb(184, 182, 182);
 }
 
-main .round-r-corner {
+main .round-lower-corner {
     border-radius: 0 0 20px 0;
 }
 
-main .round-l-corner {
+main .round-upper-corner {
     border-radius: 0 20px 0 0;
 }
 
@@ -62,23 +110,93 @@ main .round-l-corner {
     background-image: url("images/ul.jpg");
 }
 
+/* nav start */
+
+header nav {
+    padding-top:13px;
+}
+
+header nav>ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+header nav>ul>li>a {
+    text-decoration: none;
+    padding: 20px 0 12px 0;
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header nav>ul>li>a:hover, .dropdown-content>ul>li>a:hover, .dropdown:hover>ul>li>a {
+    color: rgb(0, 92, 160);
+    text-decoration: underline;
+}
+
+header nav>ul>.sep {
+    padding: 20px 16px 0 16px;
+    color: rgb(177, 175, 175);
+}
+
+header .dropdown-content>ul {
+    list-style: none;
+}
+
+header .dropdown-content>ul>li {
+    border-bottom: solid 0.2px rgb(177, 175, 175);
+}
+
+header .dropdown-content>ul>li>a {
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    width: max-content;
+}
+
+header .dropdown:hover>.dropdown-content {
+    display: block;
+}
+
+header .dropdown {
+    position: relative;
+}
+
+header .dropdown-content {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(154, 154, 154, 1) 0%, rgba(195, 195, 195, 1) 0%, rgba(150, 149, 149, 1) 16%, rgba(156, 156, 156, 1) 100%);
+    display: none;
+    width: fit-content;
+}
+
+/* nav end */
+
 footer {
     height: 38px;
     width: 100%;
     position: fixed;
     bottom: 0px;
-    background-color: #909090;
+    background: linear-gradient(180deg, rgba(154, 154, 154, 1) 0%, rgba(195, 195, 195, 1) 0%, rgba(150, 149, 149, 1) 16%, rgba(156, 156, 156, 1) 100%);
     color: #fff;
     font-size: 14px;
     text-align: center;
 }
 
-footer > a {
+footer>.footer-content {
+    padding-top: 10px;
+}
+
+footer>.footer-content>a {
     text-decoration: none;
     color: #fff;
 }
 
-footer > a > .icon {
+footer>.footer-content>a>.icon {
     width: 18px;
     height: 18px;
     position: relative;

@@ -263,6 +263,11 @@ main .text-panel a.more-white {
     width: 40px;
 }
 
+main a.more-yellow:hover, main a.more-white:hover {
+    color: #005ca0;
+    background: url(images/read_more_blue.png) no-repeat left center;
+}
+
 #l-left img {
     margin-right: 40px;
     height: 165px;

@@ -66,7 +66,7 @@ header .search-row {
 /* nav start */
 
 header nav {
-    padding-top:13px;
+    padding-top: 13px;
 }
 
 header nav>ul {
@@ -171,7 +171,7 @@ main .row-5 {
 main .col-direction {
     flex-direction: column;
     justify-content: flex-start;
-    padding: 20px 20px 0 0 ;
+    padding: 20px 20px 0 0;
 }
 
 main .upper {
@@ -206,12 +206,12 @@ main .text-panel {
     padding: 15px;
 }
 
-main .text-panel > h3 {
+main .text-panel>h3 {
     font-size: 14px;
     font-weight: bold;
 }
 
-main .text-panel > p {
+main .text-panel>p {
     margin-top: 5px;
     font-size: 13px;
     line-height: 1;
@@ -249,7 +249,7 @@ main a.more-white {
 }
 
 main .text-panel a.more-white {
-    width: 53px;   
+    width: 53px;
 }
 
 #l-mid a.more-yellow, #l-right a.more-yellow {
@@ -277,7 +277,7 @@ main a.more-yellow:hover, main a.more-white:hover {
 #l-right, #l-mid, #l-left {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(245,245,245,1) 38%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(238, 238, 238, 1) 0%, rgba(245, 245, 245, 1) 38%, rgba(255, 255, 255, 1) 100%);
 }
 
 #l-mid img, #l-right img {
@@ -312,6 +312,149 @@ footer>.footer-content>a>.icon {
     top: 5px;
 }
 
-footer > .footer-content > .red-font {
-    color: red;
+.contact-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.contact-container nav ul {
+    list-style: none;
+    background: linear-gradient(0deg, rgba(205, 205, 205, 1) 0%, rgba(245, 245, 245, 1) 49%);
+    padding-right: 15px;
+    border-top: solid #d8d8d8 1px;
+    width: 110px;
+    height: 36px;
+}
+
+.contact-container nav ul a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #5c5c5c;
+    line-height: 32px;
+}
+
+.contact-container .column-dir {
+    flex-direction: column;
+}
+
+.contact-container .col-2 {
+    flex: 2;
+}
+
+.contact-container .col-4 {
+    flex: 4;
+}
+
+.contact-container .col-6 {
+    flex: 6;
+}
+
+.contact-container .card-mid {
+    border-radius: 0 20px 0 0;
+    border: solid #CCCCCC 1px;
+    background: linear-gradient(0deg, rgba(229, 229, 229, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 347px;
+    min-height: 332px;
+    padding: 12px 18px;
+    color: #72716d;
+    font-size: 12px;
+}
+
+.contact-container .card-left {
+    border-radius: 0 20px 0 0;
+    border: solid #CCCCCC 1px;
+    background: linear-gradient(0deg, rgba(229, 229, 229, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 248px;
+    height: 142px;
+    padding: 18px 22px 15px;
+    color: #72716d;
+    font-size: 12px;
+}
+
+.contact-container .card-left.top {
+    margin-top: 40px;
+}
+
+.contact-container .card-left.bottom {
+    margin-top: 20px;
+}
+
+.contact-container h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #72716d;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    margin-top: 25px;
+}
+
+.contact-container .bread-crumbs, .contact-container .bread-crumbs a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+.contact-container .card-left a {
+    text-decoration: none;
+    color: blue;
+}
+
+.contact-container .card-mid p {
+    padding: 5px 0 5px 0;
+}
+
+.contact-container .card-left .text {
+    font-size: 13px;
+    color: #6d6d6d;
+    padding-top: 5px;
+    border-top: solid 2px #e9e9e9;
+}
+
+.contact-container h2 {
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.contact-container .col-1 {
+    flex: 1;
+}
+
+.contact-container form {
+    width: 80%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+.contact-container form textarea {
+    float: right;
+    color: #6d6d6d;
+    width: 257px;
+    height: 100px;
+    padding: 3px;
+    border: 1px solid #808992;
+    margin-bottom: 4px;
+}
+
+.contact-container form .send-btn {
+    margin-right: 222px;
+    color: #fff;
+    border-radius: 0 7px 0 0;
+    width: 44px;
+    height: 21px;
+    border: solid 1px rgb(219, 219, 219);
+    background: linear-gradient(0deg, rgba(2,82,138,1) 33%, rgba(95,186,225,1) 100%);
+    font-size: 14px;
+}
+
+.contact-container form .send-btn:hover {
+    background: linear-gradient(0deg, rgba(245,148,10,1) 33%, rgba(253,233,32,1) 100%);
+    cursor: pointer;
+}
+
+.contact-container form input {
+    height: 17px;
+    margin-bottom: 4px;
 }
